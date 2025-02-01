@@ -4,10 +4,10 @@ import { QuizCard } from './components/QuizCard';
 import { ResultCard } from './components/ResultCard';
 import type { QuizQuestion, QuizState } from './types';
 
-const QUESTION_TIMER = 30; // seconds per question
+const QUESTION_TIMER = 30;
 const API_URL = 'http://localhost:5000/api/quiz';
 
-// Fallback mock data when API is unavailable
+
 const MOCK_QUESTIONS: QuizQuestion[] = [
   {
     id: 1,
@@ -83,7 +83,6 @@ function App() {
         throw new Error('Invalid data format: expected an array of questions');
       }
       
-      // Validate each question object
       const validatedQuestions = data.map((question: any, index: number) => {
         if (!question.question || !Array.isArray(question.options) || !question.correctAnswer) {
           throw new Error(`Invalid question format at index ${index}`);
@@ -94,14 +93,13 @@ function App() {
           question: question.question,
           options: question.options,
           correctAnswer: question.correctAnswer,
-          points: question.points || 100 // Default points if not provided
+          points: question.points || 100 
         };
       });
       
       setQuestions(validatedQuestions);
     } catch (err) {
       console.error('Error fetching quiz data:', err);
-      // Fallback to mock data when API fails
       console.log('Using mock questions as fallback');
       setQuestions(MOCK_QUESTIONS);
     } finally {
@@ -152,7 +150,7 @@ function App() {
   };
 
   const handleRestart = () => {
-    fetchQuizData(); // Fetch fresh questions for new attempt
+    fetchQuizData(); 
     setQuizState({
       currentQuestionIndex: 0,
       score: 0,

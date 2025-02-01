@@ -1,18 +1,18 @@
-const express = require('express');
-const fetch = require('node-fetch');
-const cors = require('cors');
-require('dotenv').config();
+import express from 'express';
+import fetch from 'node-fetch';
+import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 const port = 5000;
 
-// Enable CORS for the client
 app.use(cors());
 
-// Route to fetch quiz data from the proxy
 app.get('/api/quiz', async (req, res) => {
   try {
-    const apiResponse = await fetch('https://api.jsonserve.com/Uw5CrX');
+    const apiResponse = await fetch('process.env.API_URL');
     if (!apiResponse.ok) {
       throw new Error('Failed to fetch from external API');
     }
