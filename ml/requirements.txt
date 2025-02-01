@@ -1,3 +1,0 @@
-pickle5
-flask
-numpy
