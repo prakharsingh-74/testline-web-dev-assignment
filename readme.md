@@ -125,6 +125,16 @@ quiz-app/
 
 ---
 
+## Screenshots and Video
+
+![{AF7A179B-B377-4AC0-8FF1-02EC8F6EECD9}](https://github.com/user-attachments/assets/a9c4f968-e615-4ad4-8eb3-0954b52afbcf)
+
+![{A3935E62-B125-4205-80BB-65545335A468}](https://github.com/user-attachments/assets/c2d345c9-cf1a-4e40-a227-ce40676965c9)
+
+![{DF5B5EFB-A20E-4D70-9468-51659A2BA094}](https://github.com/user-attachments/assets/45133202-5fe3-4ecf-ac4e-d829af54f393)
+
+
+
 ## Testing
 
 ### Backend Testing
