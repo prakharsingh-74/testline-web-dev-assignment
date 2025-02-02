@@ -244,7 +244,7 @@ function App() {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Brain className="w-8 h-8 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Quiz Master</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Testline Quiz Master</h1>
           </div>
           <div className="bg-blue-100 rounded-lg p-2 inline-block">
             <span className="font-semibold text-blue-800">
