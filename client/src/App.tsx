@@ -78,7 +78,7 @@ function App() {
       
       const data = await response.json();
       
-      // Validate the data structure
+
       if (!Array.isArray(data)) {
         throw new Error('Invalid data format: expected an array of questions');
       }
@@ -209,7 +209,7 @@ function App() {
           <div className="flex items-center justify-center mb-6">
             <Brain className="w-16 h-16 text-blue-600" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Quiz Master</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">Testline Quiz Master</h1>
           <p className="text-gray-600 mb-8">
             Test your knowledge with our interactive quiz! Answer questions quickly to maintain your streak and earn more points.
           </p>
